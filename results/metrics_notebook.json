@@ -1,0 +1,46 @@
+{
+  "data_source": "eurosat",
+  "n_samples": 4000,
+  "n_per_class": 400,
+  "kmeans": {
+    "ARI": 0.1808660923777511,
+    "NMI": 0.31863628978533437,
+    "matched_accuracy": 0.3645
+  },
+  "gmm": {
+    "ARI": 0.187675904246645,
+    "NMI": 0.3331730178034803,
+    "matched_accuracy": 0.37575
+  },
+  "random_forest": {
+    "accuracy": 0.712
+  },
+  "cnn": {
+    "accuracy": 0.772,
+    "n_parameters": 24458,
+    "best_val_acc": 0.795
+  },
+  "timings_seconds": {
+    "load_data": 2.255230188369751,
+    "unsupervised": 2.1759753227233887,
+    "random_forest": 1.1129076480865479,
+    "cnn_train": 93.49293041229248
+  },
+  "environmental_cost": {
+    "seconds": 99.03704357147217,
+    "energy_kwh": 0.0018404383930365243,
+    "co2_grams": 0.4233008303984006,
+    "params": {
+      "cpu_tdp_watts": 65.0,
+      "cpu_utilisation": 0.55,
+      "baseline_watts": 20.0,
+      "pue": 1.2,
+      "grid_intensity": 230.0
+    },
+    "equivalences": {
+      "km_in_petrol_car": 0.002490004884696474,
+      "smartphone_charges": 0.05100010004800007,
+      "kettles_boiled": 0.006047154719977152
+    }
+  }
+}
